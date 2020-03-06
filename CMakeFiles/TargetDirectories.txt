@@ -1,0 +1,8 @@
+/Users/trannhatthong/Desktop/CAdvanced/CMakeFiles/rebuild_cache.dir
+/Users/trannhatthong/Desktop/CAdvanced/CMakeFiles/edit_cache.dir
+/Users/trannhatthong/Desktop/CAdvanced/CMakeFiles/qsort_demo.dir
+/Users/trannhatthong/Desktop/CAdvanced/CMakeFiles/mylib.dir
+/Users/trannhatthong/Desktop/CAdvanced/CMakeFiles/demo_debug_printf.dir
+/Users/trannhatthong/Desktop/CAdvanced/DebugPrintf/CMakeFiles/rebuild_cache.dir
+/Users/trannhatthong/Desktop/CAdvanced/DebugPrintf/CMakeFiles/edit_cache.dir
+/Users/trannhatthong/Desktop/CAdvanced/DebugPrintf/CMakeFiles/debug_printf.dir

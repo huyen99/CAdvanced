@@ -3,28 +3,45 @@
 
 #include "mylib/algorithm.h"
 
+#define max 100
+
 int main()
 {
 
-    int n;
-    printf("Enter size of array:\n");
-    scanf("%d", &n); // E.g. 8
+    FILE *myFile;
+    myFile = fopen("/Users/trannhatthong/Desktop/CAdvanced/resources/text.txt", "r");
 
-    printf("Enter the elements of the array\n");
+    //read file into array
+    int a[max];
     int i;
-    int *arr = (int *)malloc(sizeof(int) * n);
-    for (i = 0; i < n; i++)
+    int number;
+    int count = 1;
+    while (getc(myFile) != EOF) {
+    fscanf(myFile, "%d,", &number);
+    count++;
+  }
+
+    rewind(myFile);
+
+    for (i = 0; i < count; i++)
     {
-        scanf("%d", &arr[i]);
+        fscanf(myFile, "%d", &a[i]);
     }
 
-    printf("Original array: ");
-    display(arr, n); // Original array : 10 11 9 8 4 7 3 8
+    for (i = 0; i < count; i++)
+    {
+        printf("Number is: %d\n\n", a[i]);
+    }
 
-    quickSort(arr, 0, n - 1);
+
+
+
+    printf("Original array: ");
+    display(a, count);
 
     printf("Sorted array: ");
-    display(arr, n); // Sorted array : 3 4 7 8 8 9 10 11
+    quickSort(a, 0, count - 1 );
+    display(a, count); // Sorted array : 3 4 7 8 8 9 10 11
     getchar();
     return 0;
 }

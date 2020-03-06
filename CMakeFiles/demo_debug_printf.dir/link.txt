@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/demo_debug_printf.dir/hello/demo_debug_printf.c.o  -o demo_debug_printf  DebugPrintf/libdebug_printf.a 
