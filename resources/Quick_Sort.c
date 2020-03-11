@@ -9,8 +9,12 @@ int main()
 {
 
     FILE *myFile;
-    myFile = fopen("/Users/trannhatthong/Desktop/CAdvanced/resources/text.txt", "r");
 
+    myFile = fopen("Desktop/CAdvanced/resources/text.txt", "r");
+    if (myFile == NULL){
+      printf("File cannot be read!");
+      exit(0);
+    }
     //read file into array
     int a[max];
     int i;
